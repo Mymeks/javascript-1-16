@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><title>Wysocki — Zadanie 14</title></head>
+<body>
+<h1>Zadanie 14 — Rozkład ułamka egipskiego na trzy ułamki</h1>
+<script>
+var m_wys = parseInt(prompt("Podaj liczbę naturalną m > 0:", "4"), 10);
+if (Number.isInteger(m_wys) && m_wys > 0) {
+  var d1_wys = m_wys + 2;
+  var d2_wys = (m_wys + 1) * (m_wys + 2);
+  var d3_wys = m_wys * (m_wys + 1);
+  document.write("<p>1/" + m_wys + " = 1/" + d1_wys + " + 1/" + d2_wys + " + 1/" + d3_wys + "</p>");
+} else {
+  document.write("<p>Wpisz dodatnią liczbę całkowitą.</p>");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><title>Wysocki — Zadanie 15</title></head>
+<body>
+<h1>Zadanie 15 — Dwa takie same ułamki egipskie</h1>
+<script>
+var m_wys = parseInt(prompt("Podaj liczbę naturalną m > 0:", "3"), 10);
+if (Number.isInteger(m_wys) && m_wys > 0) {
+  document.write("<p>1/" + m_wys + " = 1/" + (2 * m_wys) + " + 1/" + (2 * m_wys) + "</p>");
+} else {
+  document.write("<p>Wpisz dodatnią liczbę całkowitą.</p>");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wysocki — Zadanie 6</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 24px; line-height: 1.5; }
+h1 { color: #183153; }
+button, input { font-size: 1rem; padding: 8px 12px; }
+.result { margin-top: 16px; }
+table { border-collapse: collapse; }
+th, td { border: 1px solid #888; padding: 8px; }
+
+</style>
+</head>
+<body>
+
+<h1>Zadanie 6 — Okienka dialogowe i zmienne</h1>
+<p><b>1. Rodzaje okienek dialogowych</b></p>
+<p><u><b>alert()</b></u> — wyświetla informację i przycisk OK. Użytkownik potwierdza przeczytanie komunikatu.</p>
+<p><u><b>prompt()</b></u> — wyświetla okno, w którym użytkownik może wpisać wartość; zwraca wpisany tekst albo <code>null</code> po anulowaniu.</p>
+<p><u><b>confirm()</b></u> — prosi o potwierdzenie; zwraca <code>true</code> po wybraniu OK albo <code>false</code> po wybraniu Cancel.</p>
+<p><b>2. Konwersja zmiennych</b></p>
+<p><u><code>parseFloat(x)</code></u> — konwertuje tekst na liczbę, także z częścią dziesiętną. <u><code>parseInt(x)</code></u> — konwertuje na liczbę całkowitą. <u><code>String(x)</code></u> lub <code>x.toString()</code> — zamienia wartość na tekst. Wartości pobrane przez <code>prompt()</code> są tekstem, dlatego przed obliczeniami trzeba je skonwertować.</p>
+<p><b>3. Trzy zasady nadawania nazw zmiennym</b></p>
+<ol>
+<li>Nazwa zaczyna się od litery, znaku <code>_</code> lub <code>$</code>; może zawierać litery bez polskich znaków, cyfry, <code>_</code> i <code>$</code>.</li>
+<li>Wielkość liter ma znaczenie: <code>Rekord</code> i <code>rekord</code> to różne nazwy.</li>
+<li>Nie używa się słów kluczowych JavaScript jako nazw zmiennych.</li>
+</ol>
+<p><b>4. Podstawowe typy zmiennych w JavaScript</b></p>
+<ul>
+<li><b>Number</b> — liczby całkowite i zmiennoprzecinkowe.</li>
+<li><b>String</b> — tekst.</li>
+<li><b>Boolean</b> — wartość logiczna: <code>true</code> albo <code>false</code>.</li>
+<li><b>Null</b> — celowo brak wartości.</li>
+<li><b>Undefined</b> — wartość niezdefiniowana.</li>
+<li><b>Object</b> — obiekt.</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><title>Wysocki — Zadanie 12</title></head>
+<body>
+<div style="color:green;font-size:50px;">
+<script>
+var D1_wys = parseInt(prompt("Data1=", ""), 10);
+var G1_wys = parseInt(prompt("Godzina1=", ""), 10);
+var D2_wys = parseInt(prompt("Data2=", ""), 10);
+var G2_wys = parseInt(prompt("Godzina2=", ""), 10);
+var sekund_wys = ((D1_wys - D2_wys) * 24 + (G1_wys - G2_wys)) * 60 * 60;
+document.write("Ilość sekund między dniem " + D1_wys + " godz. " + G1_wys +
+               " a dniem " + D2_wys + " godz. " + G2_wys + " = " + sekund_wys + " sekund");
+</script>
+</div>
+</body>
+</html>

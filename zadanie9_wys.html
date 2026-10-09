@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><title>Wysocki — Zadanie 9</title></head>
+<body>
+<h1>Zadanie 9 — Prompt Box</h1>
+<p>Prompt pozwala wpisać tekst. Po anulowaniu zwraca null.</p>
+<button onclick="show_prompt()">Pokaż prompt box</button>
+<script>
+function show_prompt() {
+  var name = prompt("Napisz imię", "Imię Nazwisko");
+  if (name !== null && name.trim() !== "") {
+    document.body.innerHTML = "<h1>Witaj " + name.replace(/[&<>"']/g, function(c) { return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]; }) + "! Jak się masz?</h1>";
+  }
+}
+</script>
+</body>
+</html>
