@@ -1,22 +1,34 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-    <meta charset="utf-8">
-    <title>Proste obliczenia</title>
+    <meta charset="UTF-8">
+    <title>Zadanie 16</title>
 </head>
 <body>
-<div style="color:red;font-size:100px;">
+<div style="color:navy; font-size:30px;">
 <script>
-var liczba1 = prompt("A=", "");
-var A_wys = parseFloat(liczba1);
+    var A = prompt("Podaj pierwszą liczbę A=", "");
+    var B = prompt("Podaj drugą liczbę B=", "");
 
-var liczba2 = prompt("B=", "");
-var B_wys = parseFloat(liczba2);
+    A = parseInt(A);
+    B = parseInt(B);
 
-document.write("A=" + A_wys + " B=" + B_wys + "<br>");
-document.write("(" + A_wys + " + " + B_wys + ")^3 = "
-    + Math.pow(A_wys + B_wys, 3));
+    var wynik = (A + B) * (A + B) * (A + B);
+    var a3 = A * A * A;
+    var skladnik1 = 3 * A * A * B;
+    var skladnik2 = 3 * A * B * B;
+    var b3 = B * B * B;
+
+    document.write("Wczytane liczby: A=" + A + " B=" + B + "<br>");
+
+    document.write(
+        "(" + A + " + " + B + ")^3 = " +
+        A + "^3 + 3*(" + A + ")^2*(" + B + ") + " +
+        "3*(" + A + ")*(" + B + ")^2 + " + B + "^3 = " +
+        a3 + " + " + skladnik1 + " + " +
+        skladnik2 + " + " + b3 + " = " + wynik
+    );
 </script>
 </div>
 </body>
