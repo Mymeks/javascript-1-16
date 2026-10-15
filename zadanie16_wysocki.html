@@ -1,18 +1,23 @@
+
 <!DOCTYPE html>
+<html>
 <head>
-<title> proste obliczenia</title>
-<meta charset="utf-8">
+    <meta charset="utf-8">
+    <title>Proste obliczenia</title>
 </head>
 <body>
 <div style="color:red;font-size:100px;">
-<script language="JavaScript">
-var liczbal=prompt ("A=","");
-var A_wys=parseFloat(liczbal);
-var liczba2=prompt ("B=","");
-var B_wys=parseFloat(liczba2);
-document.write
-("A="+A_wys" + "+B_wys+"<br>");
-document.write
-("("+A_wys+" + "+B_wys+")^3="+"<br>");
+<script>
+var liczba1 = prompt("A=", "");
+var A_wys = parseFloat(liczba1);
+
+var liczba2 = prompt("B=", "");
+var B_wys = parseFloat(liczba2);
+
+document.write("A=" + A_wys + " B=" + B_wys + "<br>");
+document.write("(" + A_wys + " + " + B_wys + ")^3 = "
+    + Math.pow(A_wys + B_wys, 3));
 </script>
 </div>
+</body>
+</html>
